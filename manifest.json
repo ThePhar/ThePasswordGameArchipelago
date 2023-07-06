@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "The Password Game for Archipelago",
+    "version": "1.0",
+
+    "description": "Just a funny way to add AP support for a game that's popular on the internet right now.",
+    "icons": {
+        "48": "icon-48.png",
+        "96": "icon-96.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://neal.fun/password-game/*"],
+            "js": ["archipelago.min.js", "ap-password.js"]
+        }
+    ]
+}
